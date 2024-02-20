@@ -91,7 +91,7 @@ internal class OutputFileStream {
         do {
             let existing = fileHandle
             fileHandle = nil
-            if #available(iOS 13.4, tvOS 13.0, *) {
+            if #available(iOS 13.0, tvOS 13.0, *) {
                 try existing?.synchronize() // this might be overkill, but JIC.
                 try existing?.close()
             } else {
