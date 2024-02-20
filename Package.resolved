@@ -3,19 +3,19 @@
     {
       "identity" : "jsonsafeencoder-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/segmentio/jsonsafeencoder-swift.git",
+      "location" : "https://github.com/vcapillaTW/jsonsafeencoder-swift.git",
       "state" : {
-        "revision" : "75ad40f07d4e0b938e3afb80811244d6b7acd4ba",
-        "version" : "1.0.0"
+        "branch" : "main",
+        "revision" : "1a57dc61f18658947165850e2c0f51bf4be2af9c"
       }
     },
     {
       "identity" : "sovran-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/segmentio/Sovran-Swift.git",
+      "location" : "https://github.com/vcapillaTW/Sovran-Swift.git",
       "state" : {
-        "revision" : "64f3b5150c282a34af4578188dce2fd597e600e3",
-        "version" : "1.1.0"
+        "branch" : "main",
+        "revision" : "f4c35ce1d634f04df6bd785547d395b3c06d76d9"
       }
     }
   ],
