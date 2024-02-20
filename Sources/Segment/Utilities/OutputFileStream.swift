@@ -55,7 +55,7 @@ internal class OutputFileStream {
             fileHandle = try FileHandle(forWritingTo: fileURL)
             if #available(iOS 13.4, macOS 10.15.4, tvOS 13.4, *) {
                 _ = try? fileHandle?.seekToEnd()
-            } else if #available(tvOS 13.0, *) {
+            } else if #available(iOS 13.0, tvOS 13.0, *) {
                 try? fileHandle?.seek(toOffset: .max)
             } else {
                 // unsupported
@@ -91,7 +91,7 @@ internal class OutputFileStream {
         do {
             let existing = fileHandle
             fileHandle = nil
-            if #available(tvOS 13.0, *) {
+            if #available(iOS 13.4, tvOS 13.0, *) {
                 try existing?.synchronize() // this might be overkill, but JIC.
                 try existing?.close()
             } else {
